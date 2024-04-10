@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+     <meta charset="UTF-8">
+     <title>Menu de Navegaçao </title>
+     <style>
+     nav ul {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+        text-align: center;
+     }   
+
+     nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+     }
+     nav ul li a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+     }
+     nav ul li a:hover{
+        background-color: red;
+     }
+     nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        padding: 0;
+     }
+     nav ul ul li {
+        display: block;
+     }
+
+     nav ul li:hover ul {
+        display: block;
+     }
+     </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                  <a href="#"> Cartão </a>
+                </li>
+                <li>
+                  <a href="#"> Trasferências </a>
+                    <ul>
+                     <a href="#"> PIX </a>
+                     <a href="#"> TED </a>
+                     <a href="#"> DOC </a>
+                   </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>
